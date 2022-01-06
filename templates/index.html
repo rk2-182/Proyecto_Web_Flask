@@ -1,0 +1,45 @@
+{%extends 'layout.html'%}
+
+{%block title%}Inicio{%endblock%}
+{%block content%}
+    <h1 class="display-2">Desarrolladores Python-Flask y Mas...</h1>
+    <hr>
+    {% with messages = get_flashed_messages()%}
+    {% if messages %}
+    {% for messages in messages%}
+    <div class="alert alert-success" role="alert">
+        {{messages}}
+    </div>
+    {%endfor%}
+    {%endif%}
+    {%endwith%}
+
+
+    <h3>Flask</h3>
+    <span class="tipo_letra">Aplicación</span>
+    <p>Flask es un framework minimalista escrito en Python que permite crear aplicaciones web rápidamente y con un mínimo
+        número de líneas de código. Está basado en la especificación WSGI de Werkzeug y el motor de templates Jinja2 y tiene
+        una licencia BSD.</p>
+    <br>
+    <h3>Ejemplo</h3>
+    <p>El código siguiente muestra una aplicación simple que imprime "¡Hola Mundo!": </p>
+    <div class="fondo">
+        <p>
+            <span class="naranja">from</span> flask <span class="naranja">import</span> Flask
+            <br>
+            app = Flask(__name__)
+            <br>
+            @app.route("/")
+            <br>
+            <br>
+            <span class="naranja">def</span> holamundo():
+            <br>
+            &nbsp &nbsp &nbsp return "¡Hola Mundo!"
+            <br>
+            <br>
+            app.run(port=5000)
+            <br>
+        </p>
+    </div>
+
+{%endblock%}

@@ -1,0 +1,31 @@
+{%extends 'layout.html'%}
+
+{%block title%} Registrar Programador{%endblock%}
+{%block content%}
+<h1 class="display-1">Registrar Programador</h1>
+<hr>
+<div id="formulario" class="col-3 border-left-0">
+    <form action="" method="POST">
+        <div class="mb-3">
+            <label for="lenguaje">Lenguaje</label>
+            <input type="text" class="form-control" name="lenguaje" required>
+        </div>
+        <div class="mb-3">
+            <label for="años_experiencia">Experiencia</label>
+            <input type="number" class="form-control" name="experiencia" required>
+        </div>
+        <div class="mb-3">
+            <label for="sueldo">Sueldo</label>
+            <input type="number" class="form-control" name="sueldo" required>
+        </div>
+        <div class="mb-3">
+            <label for="ciudad">Ciudad</label>
+            <input type="text" class="form-control" name="ciudad">
+        </div>
+
+        <input type="submit" class="btn btn-success" value="Guardar">
+
+    </form>
+</div>
+
+{%endblock%}

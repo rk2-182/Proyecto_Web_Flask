@@ -1,0 +1,58 @@
+{%extends 'layout.html'%}
+
+{% block content%}
+    <h1>Registros Actuales</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope=" col">ID</th>
+                <th scope="col">Lenguaje</th>
+                <th scope="col">Experiencia</th>
+                <th scope="col">Sueldo</th>
+                <th scope="col">Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in programadores%}
+            <tr>
+                <th scope="row">{{i[0]}}</th>
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                <td>{{i[4]}}</td>
+            </tr>
+        </tbody>
+        {% endfor%}
+    </table>
+
+    
+    <h2>Actualizar Registro</h2>
+    <hr>
+    <form method="POST" action="{{ url_for('actualizar_programador')}}">
+        <h3>Ingrese el id del registro para actualizar</h3>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">ID</label>
+            <input name="id" type="number" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Lenguaje</label>
+            <input name="lenguaje" type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Experiencia</label>
+            <input name="experiencia" type="text" class="form-control" id="exampleInputPassword1" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Sueldo</label>
+            <input name="sueldo" type="number" class="form-control" id="exampleInputPassword1" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Ciudad</label>
+            <input name="ciudad" type="text" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Actualizar</button>
+    </form>
+
+
+{%endblock%}
+

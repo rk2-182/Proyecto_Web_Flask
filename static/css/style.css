@@ -1,0 +1,26 @@
+
+.tipo_letra{
+    font-style: italic;
+    color: blue;
+}
+
+.naranja{
+    color: orange;
+}
+
+.fondo{
+    background-color: gray;
+}
+
+#formulario{
+    border: 1px solid gainsboro;
+    padding: 2%;
+}
+
+/*
+.tamaño-img{
+    width: 30%;
+    height: 150px;
+    background-color: whitesmoke; 
+}*/
+
