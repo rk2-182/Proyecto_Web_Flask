@@ -1,4 +1,13 @@
 
+.milk-404 {
+  max-height: 100vh;
+}
+
+#mouth-frown {
+  visibility: hidden;
+}
+
+
 .tipo_letra{
     font-style: italic;
     color: blue;
@@ -23,4 +32,18 @@
     height: 150px;
     background-color: whitesmoke; 
 }*/
+
+.footer{
+    text-align: center;
+}
+
+.contenedor{
+    width: 50%;
+    margin-left: 329px;
+}
+
+
+
+
+
 
