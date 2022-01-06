@@ -2,44 +2,58 @@
 
 {%block title%}Inicio{%endblock%}
 {%block content%}
-    <h1 class="display-2">Desarrolladores Python-Flask y Mas...</h1>
-    <hr>
-    {% with messages = get_flashed_messages()%}
-    {% if messages %}
-    {% for messages in messages%}
-    <div class="alert alert-success" role="alert">
-        {{messages}}
-    </div>
-    {%endfor%}
-    {%endif%}
-    {%endwith%}
+<h1 class="display-2">Desarrolladores Python-Flask y Mas...</h1>
+<hr>
+{% with messages = get_flashed_messages()%}
+{% if messages %}
+{% for messages in messages%}
+<div class="alert alert-success" role="alert">
+    {{messages}}
+</div>
+{%endfor%}
+{%endif%}
+{%endwith%}
 
 
-    <h3>Flask</h3>
-    <span class="tipo_letra">Aplicación</span>
-    <p>Flask es un framework minimalista escrito en Python que permite crear aplicaciones web rápidamente y con un mínimo
-        número de líneas de código. Está basado en la especificación WSGI de Werkzeug y el motor de templates Jinja2 y tiene
-        una licencia BSD.</p>
-    <br>
-    <h3>Ejemplo</h3>
-    <p>El código siguiente muestra una aplicación simple que imprime "¡Hola Mundo!": </p>
-    <div class="fondo">
-        <p>
-            <span class="naranja">from</span> flask <span class="naranja">import</span> Flask
-            <br>
-            app = Flask(__name__)
-            <br>
-            @app.route("/")
-            <br>
-            <br>
-            <span class="naranja">def</span> holamundo():
-            <br>
-            &nbsp &nbsp &nbsp return "¡Hola Mundo!"
-            <br>
-            <br>
-            app.run(port=5000)
-            <br>
-        </p>
-    </div>
+<h3>Flask</h3>
+<span class="tipo_letra">Aplicación</span>
+<p>Flask es un framework minimalista escrito en Python que permite crear aplicaciones web rápidamente y con un mínimo
+    número de líneas de código. Está basado en la especificación WSGI de Werkzeug y el motor de templates Jinja2 y tiene
+    una licencia BSD.</p>
+<br>
+<h3>Ejemplo</h3>
+<p>El código siguiente muestra una aplicación simple que imprime "¡Hola Mundo!": </p>
+<div class="fondo">
+    <p>
+        <span class="naranja">from</span> flask <span class="naranja">import</span> Flask
+        <br>
+        app = Flask(<span class="azul">__name__</span>)
+        <br>
+        @app.route("/")
+        <br>
+        <br>
+        <span class="naranja">def</span> holamundo():
+        <br>
+        &nbsp &nbsp &nbsp return "¡Hola Mundo!"
+        <br>
+        <br>
+        app.run(port=5000)
+        <br>
+    </p>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ultricies enim. Quisque vitae tortor mi.
+    Maecenas tincidunt, lectus tempor pellentesque viverra, diam magna accumsan ante, a ornare odio justo sit amet
+    mauris. Aliquam ut arcu varius, auctor est vel, venenatis lacus. Phasellus luctus vel ligula sit amet aliquet.
+    Aliquam ullamcorper venenatis sem, vel tincidunt ipsum bibendum ac. Etiam et iaculis enim. Vestibulum bibendum ex
+    sed lectus finibus egestas. Donec ornare mollis est at suscipit. Praesent quis porta lacus. Duis mattis consequat
+    pellentesque. Integer eleifend ligula ut augue rhoncus, eu tincidunt justo vulputat</p>
+
+<p>Sed quis fringilla nunc, at aliquam arcu. Nam venenatis in libero sit amet sodales. Proin faucibus tellus velit, et
+    interdum dolor hendrerit sed. Nunc blandit non odio quis tincidunt. Integer eget nisi iaculis, interdum ex id,
+    feugiat nulla. Nulla placerat hendrerit magna, ut pellentesque metus pulvinar ut. Etiam fringilla tortor in urna
+    rhoncus, at blandit nulla pretium. Praesent lorem eros, mollis a faucibus sed, laoreet eu enim. Praesent non laoreet
+    turpis, vitae convallis arcu. Sed semper pretium augue nec tincidunt. Suspendisse sagittis vehicula nisl id aliquet.
+    Maecenas dui dui, volutpat ut lectus nec, egestas finibus ligula. Vestibulum tortor odio, elementum quis feugiat ut,
+    porttitor a eros.</p>
 
 {%endblock%}

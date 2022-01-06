@@ -17,6 +17,10 @@
     color: orange;
 }
 
+.azul{
+    color: blue;
+}
+
 .fondo{
     background-color: gray;
 }
@@ -31,12 +35,13 @@
     width: 30%;
     height: 150px;
     background-color: whitesmoke; 
-}*/
+}
 
 .footer{
     text-align: center;
-}
+}*/
 
+/*404*/
 .contenedor{
     width: 50%;
     margin-left: 329px;
